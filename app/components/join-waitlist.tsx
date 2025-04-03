@@ -13,7 +13,7 @@ export default function JoinWaitlist() {
     e.preventDefault()
     const result = await joinWaitlist(email)
     if (result.success) {
-      setMessage("Thank you for joining our waitlist!")
+      setMessage("Thanks for joining!")
       setEmail("")
     } else {
       setMessage(`There was an error. Please try again. ${result.error ? `Error: ${result.error}` : ''}`)
